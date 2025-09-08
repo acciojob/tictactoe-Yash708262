@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.addEventListener('DOMContentLoaded', function() {
             // Get elements
             const playerInputSection = document.getElementById('player-input');
@@ -31,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Function to start the game
             function startGame() {
-                player1Name = document.getElementById('player-1').value || 'Player 1';
-                player2Name = document.getElementById('player-2').value || 'Player 2';
+                player1Name = document.getElementById('player1').value || 'Player 1';
+                player2Name = document.getElementById('player2').value || 'Player 2';
                 
                 // Hide input section and show game board
                 playerInputSection.style.display = 'none';
@@ -107,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Function to update message
             function updateMessage() {
                 const playerName = currentPlayer === 1 ? player1Name : player2Name;
-                messageDiv.textContent = `${playerName}, you're up!`;
+                messageDiv.textContent = `${playerName}, you're up`;
             }
             
             // Function to end the game
@@ -118,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     messageDiv.textContent = "It's a draw!";
                 } else {
                     const winnerName = currentPlayer === 1 ? player1Name : player2Name;
-                    messageDiv.textContent = `${winnerName}, congratulations you won!`;
+                    messageDiv.textContent = `${winnerName} congratulations you won!`;
                 }
                 
                 resetBtn.style.display = 'block';
@@ -131,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 gameBoardSection.style.display = 'none';
                 
                 // Clear input fields
-                document.getElementById('player-1').value = '';
-                document.getElementById('player-2').value = '';
+                document.getElementById('player1').value = '';
+                document.getElementById('player2').value = '';
             }
         });
