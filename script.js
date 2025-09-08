@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
             // Get elements
             const playerInputSection = document.getElementById('player-input');
             const gameBoardSection = document.getElementById('game-board');
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Update game board
                 gameBoard[cellId] = currentPlayer === 1 ? 'x' : 'o';
-                cell.textContent = currentPlayer === 1 ? 'X' : 'O';
+                cell.textContent = currentPlayer === 1 ? 'x' : 'o'; // Changed to lowercase
                 cell.classList.add(currentPlayer === 1 ? 'x' : 'o');
                 
                 moveCount++;

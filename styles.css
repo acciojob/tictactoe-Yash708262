@@ -1,5 +1,4 @@
-/*  your css code here. If applicable */
-  * {
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -90,6 +89,10 @@
             border-radius: 8px;
             background-color: #f8f9fa;
             font-weight: 600;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .board {
